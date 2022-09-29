@@ -8,7 +8,7 @@
         public const int NUMBER_OF_WORKING_DAYS = 20;
         public const int MAX_HRS_IN_A_MONTH = 100;
 
-        public static void Main(string[] args)
+        public static int ComputeEmployeeWage()
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
 
@@ -39,7 +39,12 @@
             Console.WriteLine("Total working hours in the month: {0}", totalWorkingHrs);
             Console.WriteLine("Total number of working days: {0}", day);
             Console.WriteLine("Total employee wage for the month is: {0}", totalEmpWage);
+            return totalEmpWage;
+        }
 
+        public static void Main(string[] args)
+        {
+            ComputeEmployeeWage();
         }
     }
 }
