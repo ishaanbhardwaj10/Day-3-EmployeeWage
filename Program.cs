@@ -8,15 +8,20 @@ namespace DayThreeEmployeeWage
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
 
-            int IS_PRESENT = 1;
+            int IS_FULL_TIME = 2;
+            int IS_PART_TIME = 1;
             int EMP_RATE_PER_HOUR = 20;
             Random random = new Random();
-            int empCheck = random.Next(0, 2);
+            int empCheck = random.Next(0, 3);
             int empWage, empHrs;
 
-            if (empCheck == IS_PRESENT)
+            if (empCheck == IS_FULL_TIME)
             {
                 empHrs = 8;
+            }
+            else if (empCheck == IS_PART_TIME)
+            {
+                empHrs = 4;
             }
             else
             {
